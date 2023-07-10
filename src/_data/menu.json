@@ -1,0 +1,24 @@
+{
+	"topmenu": [
+		{
+			"caption": "Info",
+			"hint": "Informationen",
+			"text": [ "Derzeit liegen keine weiteren Informationen vor" ],
+			"url": "./index.html"
+		}, {
+			"hide": false, 
+			"caption": "Prototyp",
+			"hint": "KIWI Prototype",
+			"img": "kiwi.png",
+			"text": [
+				"Der KIWI Prototyp ist nicht-funktional."
+			],
+			"url": "./kiwi.html"
+		}, {
+			"hide": true,
+			"caption": "leer",
+			"hint": "Diese Karte ist nicht belegt",
+			"url": "./"
+		}
+	]
+}

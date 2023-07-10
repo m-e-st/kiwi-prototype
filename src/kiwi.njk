@@ -1,0 +1,50 @@
+---
+layout: main.njk
+description: "KIWI Prototype"
+dbstyle: false
+permalink: "{{ page.fileSlug | slug }}.html"
+--- 
+    
+<nav class="w3-sidebar w3-bar-block w3-white" style="width:150px">
+	{% for data in kiwi.forms %}
+		<button id="btn-{{ data.id }}" class="w3-bar-item w3-button tablink" onclick="openPanel(event, '{{ data.id }}')">{{ data.name }}</button>
+	{% endfor %}
+</nav>
+
+<div class="" style="margin-left:150px">
+	{% for data in kiwi.forms %}
+		<section id="{{ data.id }}" class="w3-container kiwiform" style="display:none">
+			<div class="w3-tag w3-right" style="width:150px;">{{ data.tag | d(data.name) }}</div>
+<!--
+			<h3>{{ data.title | d(data.name)  }}</h3>
+-->
+			{% include 'forms/' + data.form + '.html' %}
+		</section>
+	{% endfor %}
+</div>
+
+<script>
+function openPanel(evt, formID) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("kiwiform");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  console.log(tablinks);
+  for (i = 0; i < tablinks.length; i++) {
+  console.log(i, tablinks[i]);
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", ""); 
+  }
+  document.getElementById(formID).style.display = "block";
+  evt.currentTarget.className += " w3-black";
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+	document.getElementById("info").style.display = "block";
+	document.getElementById("btn-info").className+= " w3-black";
+});
+</script>
+
+</div>
+
