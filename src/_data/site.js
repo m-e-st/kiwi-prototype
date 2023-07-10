@@ -7,8 +7,7 @@ module.exports = {
 		"home": "/",
 		"main": "https://tobias.stumpp.name",
 		"impressum": "https://tobias.stumpp.name/impressum",
-		"info": "https://tobias.stumpp.name",
-		"this": "https://tobias.stumpp.name/kiwi"
+		"info": "/"
 	},
 	"author": {
 		"name": "Tobias Stumpp",

@@ -16,6 +16,10 @@
 </div></div></div>
 {% endmacro %}
 
+{% call modal('login','Anmelden', 'red') %}
+	{% include 'login.njk' %}
+{% endcall %}
+
 {% call modal('about','Über …', 'blue-grey') %}
 	{% include 'about.njk' %}
 {% endcall %}

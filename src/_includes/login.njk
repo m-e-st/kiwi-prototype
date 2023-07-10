@@ -1,0 +1,26 @@
+<!-- tobias.KIWI snippet - login.njk -->
+
+<div class="w3-row-padding">
+	<div class="w3-col w3-center" style="width: 10rem">
+		<p>
+		<img src="res/logo.png" class="w3-image" style="height: 8rem; margin-top: 8px;" onclick="document.getElementById('release').style.display='block';">
+		</p>
+	</div>
+	<div class="w3-col w3-center" style="width: 15rem">
+		<p>
+			LOGIN
+			<b>{{ site.title }}</b><br>
+			Version {{ site.version }}<br><br>
+			{% if not site.author.hide %}
+			&copy; {{ site.author.year | d("2022") }}<br>
+			{% endif %}
+			{{ site.author.name }}<br>
+			{{ site.author.code | safe }}
+		</p>
+	</div>
+	<div class="w3-rest w3-margin-left w3-cell-middle" style="text-align: justify;">
+		<p>
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+		</p>
+	</div>
+</div>

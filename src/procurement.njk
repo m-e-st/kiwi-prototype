@@ -1,0 +1,54 @@
+---
+layout: main.njk
+description: "Einkauf und Wareneingang"
+dbstyle: false
+permalink: "{{ page.fileSlug | slug }}.html"
+format:
+    caption: Einkauf
+    hint: Einkauf und Wareneingang
+    color: yellow
+    img: procurement.png
+--- 
+    
+<nav class="w3-sidebar w3-bar-block w3-white" style="width:150px">
+	{% for data in kiwi.procurement %}
+		<button id="btn-{{ data.id }}" class="w3-bar-item w3-button tablink" onclick="openPanel(event, '{{ data.id }}')">{{ data.name }}</button>
+	{% endfor %}
+</nav>
+
+<div class="" style="margin-left:150px">
+	{% for data in kiwi.procurement %}
+		<section id="{{ data.id }}" class="w3-container kiwiform" style="display:none">
+			<div class="w3-panel w3-{{ format.color }}"><h3>{{ data.title | d(data.name) }}</h3></div>
+			<div class="">
+			{% include 'forms/' + data.form + '.html' %}
+			</div>
+		</section>
+	{% endfor %}
+</div>
+
+<script>
+function openPanel(evt, formID) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("kiwiform");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  console.log(tablinks);
+  for (i = 0; i < tablinks.length; i++) {
+  console.log(i, tablinks[i]);
+    tablinks[i].className = tablinks[i].className.replace(" w3-{{ format.color }}", ""); 
+  }
+  document.getElementById(formID).style.display = "block";
+  evt.currentTarget.className += " w3-{{ format.color }}";
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+	document.getElementById("{{ kiwi.procurement[0].id }}").style.display = "block";
+	document.getElementById("btn-{{ kiwi.procurement[0].id }}").className+= " w3-{{ format.color }}";
+});
+</script>
+
+</div>
+

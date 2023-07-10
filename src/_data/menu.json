@@ -1,14 +1,72 @@
 {
 	"topmenu": [
 		{
+			"hide": true,
 			"caption": "Info",
-			"hint": "Informationen",
+			"hint": "Programminformation",
+			"color": "blue",
 			"text": [ "Derzeit liegen keine weiteren Informationen vor" ],
 			"url": "./index.html"
 		}, {
-			"hide": false, 
+			"caption": "Verkauf",
+			"hint": "Verkauf und Kasse",
+			"color": "orange",
+			"img": "sales.png",
+			"text": [
+				"Verkauf von Artikeln"
+			],
+			"url": "./sales.html"
+		}, {
+			"caption": "Einkauf",
+			"hint": "Einkauf und Wareneingang",
+			"color": "yellow",
+			"img": "procurement.png",
+			"text": [
+				"Beschaffung von Artikel inkl. Wareneingang"
+			],
+			"url": "./procurement.html"
+		}, {
+			"caption": "Inventar",
+			"hint": "Artikel und Lagerbestand",
+			"color": "light-blue",
+			"img": "inventory.png",
+			"text": [
+				"Artikelverwaltung und Lagerverwaltung"
+			],
+			"url": "./inventory.html"
+		}, {
+			"caption": "Debitoren",
+			"hint": "Lieferantenverzeichnis",
+			"color": "lime",
+			"img": "debtors.png",
+			"text": [
+				"Das Lieferantenverzeichnis ist identisch zur Debitorenliste."
+			],
+			"url": "./debtors.html"
+		}, {
+			"hide": true, 
+			"caption": "Kasse",
+			"hint": "Kassenprogramm",
+			"color": "deep-orange",
+			"img": "cash.png",
+			"text": [
+				"Ein eigenständiges Kassenprogramm."
+			],
+			"url": "./cash.html"
+		}, {
+			"caption": "Mitarbeiter",
+			"hint": "Mitarbeiter und Zeitverwaltung",
+			"color": "teal",
+			"img": "employees.png",
+			"text": [
+				"Verwaltung der Mitarbeiter des Unternehmens."
+			],
+			"url": "./employees.html"
+		}, {
+			"hide": true, 
 			"caption": "Prototyp",
 			"hint": "KIWI Prototype",
+			"color": "light-green",
 			"img": "kiwi.png",
 			"text": [
 				"Der KIWI Prototyp ist nicht-funktional."
