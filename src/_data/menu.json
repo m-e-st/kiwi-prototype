@@ -11,7 +11,7 @@
 			"caption": "Verkauf",
 			"hint": "Verkauf und Kasse",
 			"color": "orange",
-			"img": "sales.png",
+			"img": "sales.svg",
 			"text": [
 				"Verkauf von Artikeln"
 			],
@@ -20,7 +20,7 @@
 			"caption": "Einkauf",
 			"hint": "Einkauf und Wareneingang",
 			"color": "yellow",
-			"img": "procurement.png",
+			"img": "procurement.svg",
 			"text": [
 				"Beschaffung von Artikel inkl. Wareneingang"
 			],
@@ -29,7 +29,7 @@
 			"caption": "Inventar",
 			"hint": "Artikel und Lagerbestand",
 			"color": "light-blue",
-			"img": "inventory.png",
+			"img": "inventory.svg",
 			"text": [
 				"Artikelverwaltung und Lagerverwaltung"
 			],
@@ -38,7 +38,7 @@
 			"caption": "Debitoren",
 			"hint": "Lieferantenverzeichnis",
 			"color": "lime",
-			"img": "debtors.png",
+			"img": "debtors.svg",
 			"text": [
 				"Das Lieferantenverzeichnis ist identisch zur Debitorenliste."
 			],
@@ -48,7 +48,7 @@
 			"caption": "Kasse",
 			"hint": "Kassenprogramm",
 			"color": "deep-orange",
-			"img": "cash.png",
+			"img": "cash.svg",
 			"text": [
 				"Ein eigenständiges Kassenprogramm."
 			],
@@ -57,7 +57,7 @@
 			"caption": "Mitarbeiter",
 			"hint": "Mitarbeiter und Zeitverwaltung",
 			"color": "teal",
-			"img": "employees.png",
+			"img": "employees.svg",
 			"text": [
 				"Verwaltung der Mitarbeiter des Unternehmens."
 			],
