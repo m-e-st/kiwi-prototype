@@ -2,7 +2,7 @@ module.exports = {
 	"title": "KIWI Prototype",
 	"description": "Prototyp für KIWI Warenwirtschaftssystem",
 	"caption": "KIWI",
-	"version" : "0.2.012",
+	"version" : "0.2.013",
 	"url" : {
 		"home": "/",
 		"main": "https://tobias.stumpp.name",

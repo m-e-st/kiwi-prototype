@@ -31,7 +31,7 @@
 			"color": "light-blue",
 			"img": "inventory.svg",
 			"text": [
-				"Artikelverwaltung und Lagerverwaltung"
+				"Artikelverwaltung und Lagerbestand"
 			],
 			"url": "./inventory.html"
 		}, {
